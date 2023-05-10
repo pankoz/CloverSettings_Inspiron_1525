@@ -53,7 +53,7 @@
 			<key>#SuspendOverride</key>
 			<false/>
 			<key>Debug</key>
-			<false/>
+			<true/>
 			<key>Fixes</key>
 			<dict>
 				<key>AddDTGP</key>
@@ -290,7 +290,7 @@
 		<key>CustomLogo</key>
 		<false/>
 		<key>Debug</key>
-		<false/>
+		<true/>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>DisableCloverHotkeys</key>
@@ -975,7 +975,7 @@
 		<key>AppleRTC</key>
 		<false/>
 		<key>Debug</key>
-		<false/>
+		<true/>
 		<key>DellSMBIOSPatch</key>
 		<false/>
 		<key>EightApple</key>
