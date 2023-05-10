@@ -9,7 +9,7 @@
 		<key>DSDT</key>
 		<dict>
 			<key>Debug</key>
-			<false/>
+			<true/>
 			<key>Fixes</key>
 			<dict>
 				<key>AddDTGP</key>
@@ -283,7 +283,7 @@
 		<key>CustomLogo</key>
 		<false/>
 		<key>Debug</key>
-		<false/>
+		<true/>
 		<key>DefaultLoader?</key>
 		<string>boot.efi</string>
 		<key>DefaultVolume</key>
@@ -849,7 +849,7 @@
 			</dict>
 		</array>
 		<key>Debug</key>
-		<false/>
+		<true/>
 		<key>DellSMBIOSPatch</key>
 		<false/>
 		<key>EightApple</key>
