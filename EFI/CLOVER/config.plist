@@ -281,8 +281,8 @@
 	<dict>
 		<key>#Arguments</key>
 		<string>slide=0 darkwake=0</string>
-		<key>#DefaultLoader</key>
-		<string>boot.efi</string>
+		<key>DefaultLoader</key>
+		<string>bootmgfw.efi</string>
 		<key>#LegacyBiosDefaultEntry</key>
 		<integer>0</integer>
 		<key>#XMPDetection</key>
@@ -292,7 +292,7 @@
 		<key>Debug</key>
 		<true/>
 		<key>DefaultVolume</key>
-		<string>LastBootedVolume</string>
+		<string>WIN7</string>
 		<key>DisableCloverHotkeys</key>
 		<false/>
 		<key>Fast</key>
@@ -696,9 +696,10 @@
 		</dict>
 		<key>#CustomIcons</key>
 		<false/>
-		<key>#Hide</key>
+		<key>Hide</key>
 		<array>
-			<string>Windows</string>
+			<string>System Reservation</string>
+			<string>MIX</string>
 			<string>BOOTX64.EFI</string>
 		</array>
 		<key>#KbdPrevLang</key>
