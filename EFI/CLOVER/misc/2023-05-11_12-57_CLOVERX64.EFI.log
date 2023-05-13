@@ -1,0 +1,438 @@
+0:100  0:100  MemLog inited, TSC freq: 2493749646
+0:100  0:000  CPU was calibrated with ACPI PM Timer
+0:100  0:000  LegacyRegion2: Chipset/proc: 0x2A008086
+0:100  0:000   Intel Series 4 and similar (PAM 0x90-0x96)
+0:100  0:000   Test PAM1=(0x41=50, 0x5a=00, 0x81=00, 0x91=11) at chipset 2A008086
+0:100  0:000  , Install = Success
+0:115  0:015  BiosVideoDriverBindingStart!
+0:115  0:000  BiosVideoCheckForVbe
+0:115  0:000  EdidOverride not found
+0:127  0:012   Edid1+
+0:127  0:000   found Detail Timing 1280x800
+0:127  0:000  timing string after 0xFE:X949H
+0:127  0:000  timing string after 0xFE:&6@GjÆÿ
+  
+0:127  0:000     0 1280x800 attr=9B - ok, edid+, working, highest, pref=0
+0:128  0:001     1 1024x768 attr=9B - ok, edid-, 1024x768, working
+0:128  0:000     2 640x480 attr=9B - ok, edid-, 640x480, working
+0:128  0:000     3 800x600 attr=9B - ok, edid-, 800x600, working
+0:129  0:000  BV new mode: 0 1280x800
+0:202  0:073   SetMode pref 0 (0) = Success
+3:002  2:800  CloverX64 : Image base = 0xDD581000
+3:002  0:000  Clover ImageHandle = de95be18
+3:002  0:000  === [ Starting Clover ] =========================
+3:002  0:000  Now is 11.05.2023,  12:57:37 (GMT)
+3:002  0:000  Starting Clover revision: 5146 (master, commit 31187f6e1) on CLOVER EFI
+3:002  0:000  Build id: 20220324214945-31187f6-5146-dirty
+3:002  0:000  Build with: [Args: -D NO_GRUB_DRIVERS_EMBEDDED -D LESS_DEBUG -t GCC53 | --cmd-len=50000 -D NO_GRUB_DRIVERS_EMBEDDED -D LESS_DEBUG --conf=/Users/sergey/src/CloverBootloader/Conf -D USE_LOW_EBDA -a X64 -b RELEASE -t GCC53 -n 5 | OS: 12.3]
+3:002  0:000  === [ Get Smbios ] ==============================
+3:002  0:000  Type 16 Index = 0
+3:002  0:000  Total Memory Slots Count = 2
+3:002  0:000  Type 17 Index = 0
+3:002  0:000  SmbiosTable.Type17->SlotIndex = 0
+3:002  0:000  SmbiosTable.Type17->ModuleSize = 2048MB
+3:002  0:000  SmbiosTable.Type17->Type = 0
+3:002  0:000  SmbiosTable.Type17->Frequency = 667MHz
+3:002  0:000  SmbiosTable.Type17->Bank/Device =  DIMM_A
+3:002  0:000  SmbiosTable.Type17->Vendor = 7F98000000000000
+3:002  0:000  SmbiosTable.Type17->SerialNo = 69CC526E
+3:002  0:000  SmbiosTable.Type17->PartNo = 9905295-052.A00LF
+3:002  0:000  Type 17 Index = 1
+3:002  0:000  SmbiosTable.Type17->SlotIndex = 1
+3:002  0:000  SmbiosTable.Type17->ModuleSize = 2048MB
+3:002  0:000  SmbiosTable.Type17->Type = 0
+3:002  0:000  SmbiosTable.Type17->Frequency = 667MHz
+3:002  0:000  SmbiosTable.Type17->Bank/Device =  DIMM_B
+3:002  0:000  SmbiosTable.Type17->Vendor = 7F98000000000000
+3:002  0:000  SmbiosTable.Type17->SerialNo = 69CC526E
+3:002  0:000  SmbiosTable.Type17->PartNo = 9905295-052.A00LF
+3:002  0:000  Boot status=0
+3:002  0:000  Running on: 'Inspiron 1525' with board '0U990C'
+3:002  0:000  === [ GetCPUProperties ] ========================
+3:002  0:000  CPU Vendor = 756E6547 Model=10676
+3:002  0:000   The CPU supported SSE4.1
+3:002  0:000   The CPU not supported RDRAND
+3:002  0:000  BrandString = Intel(R) Core(TM)2 Duo CPU     T9300  @ 2.50GHz
+3:002  0:000  got cores from CPUID_1 = 2
+3:002  0:000   The CPU supported turbo
+3:002  0:000   Energy PerfBias is  not visible:
+3:002  0:000  MSR dumps:
+3:002  0:000  	@0x00CD=1a2
+3:002  0:000  	@0x0198=6174c2206004c22
+3:002  0:000  FSBFrequency = 200 MHz, DMI FSBFrequency = 200 MHz, Corrected FSBFrequency = 200 MHz
+3:002  0:000  MaxDiv/MinDiv: 12.5/6
+3:002  0:000  Turbo: 13/0/0/0
+3:002  0:000  Features: 0x8E3BDBFEBFBFF
+3:002  0:000  Threads: 2
+3:002  0:000  Cores: 2
+3:002  0:000  FSB: 200 MHz
+3:002  0:000  CPU: 2500 MHz
+3:002  0:000  TSC: 2500 MHz
+3:002  0:000  PIS: 800 MHz
+3:002  0:000  ExternalClock: 200 MHz
+3:002  0:000  === [ GetDevices ] ==============================
+3:002  0:000  Found more than one GOP protocol ??? Using the first one
+3:002  0:000  GOP found at: PcieRoot(0x0)/Pci(0x2,0x0)/AcpiAdr(0x80010100)
+3:002  0:000  PCI (00|00:00.00) : 8086 2A00 class=060000
+3:002  0:000  PCI (00|00:02.00) : 8086 2A02 class=030000
+3:002  0:000   - GFX: Model=Intel GMA X3100 (Intel)
+3:002  0:000   - GOP: Provided by device
+3:002  0:000  PCI (00|00:02.01) : 8086 2A03 class=038000
+3:002  0:000   - GFX: Model=Intel GMA X3100 (Intel)
+3:002  0:000  PCI (00|00:1A.00) : 8086 2834 class=0C0300
+3:002  0:000  PCI (00|00:1A.01) : 8086 2835 class=0C0300
+3:002  0:000  PCI (00|00:1A.07) : 8086 283A class=0C0320
+3:002  0:000  PCI (00|00:1B.00) : 8086 284B class=040300
+3:002  0:000  PCI (00|00:1C.00) : 8086 283F class=060400
+3:003  0:000  PCI (00|09:00.00) : 11AB 4354 class=020000
+3:003  0:000   - LAN: 1 Vendor=Marvell
+3:003  0:000  Legacy MAC address of LAN #0= 00:21:9B:D7:9D:C2:
+3:003  0:000  PCI (00|00:1C.01) : 8086 2841 class=060400
+3:003  0:000  PCI (00|0B:00.00) : 14E4 4315 class=028000
+3:003  0:000   - WIFI: Vendor= Broadcom
+3:003  0:000  PCI (00|00:1C.03) : 8086 2845 class=060400
+3:003  0:000  PCI (00|0C:00.00) : 1E4B 1202 class=010802
+3:003  0:000  PCI (00|00:1C.04) : 8086 2847 class=060400
+3:003  0:000  PCI (00|0D:00.00) : 1912 0015 class=0C0330
+3:003  0:000  PCI (00|00:1D.00) : 8086 2830 class=0C0300
+3:003  0:000  PCI (00|00:1D.01) : 8086 2831 class=0C0300
+3:003  0:000  PCI (00|00:1D.02) : 8086 2832 class=0C0300
+3:003  0:000  PCI (00|00:1D.07) : 8086 2836 class=0C0320
+3:003  0:000  PCI (00|00:1E.00) : 8086 2448 class=060401
+3:003  0:000  PCI (00|02:09.00) : 1180 0832 class=0C0010
+3:003  0:000  PCI (00|02:09.01) : 1180 0822 class=080501
+3:003  0:000  PCI (00|02:09.02) : 1180 0843 class=088000
+3:003  0:000  PCI (00|02:09.03) : 1180 0592 class=088000
+3:003  0:000  PCI (00|02:09.04) : 1180 0852 class=088000
+3:003  0:000  PCI (00|00:1F.00) : 8086 2815 class=060100
+3:003  0:000  PCI (00|00:1F.01) : 8086 2850 class=01018A
+3:003  0:000  PCI (00|00:1F.02) : 8086 2829 class=010601
+3:003  0:000  PCI (00|00:1F.03) : 8086 283E class=0C0500
+3:017  0:014  _checkOEMPath Look for oem dir at path '\EFI\CLOVER\OEM\Inspiron 1525--00-21-9B-D7-9D-C2'. Dir doesn't exist.
+3:017  0:000  _checkOEMPath Look for oem dir at path '\EFI\CLOVER\OEM\Inspiron 1525'. Dir doesn't exist.
+3:017  0:000  _checkOEMPath Look for oem dir at path '\EFI\CLOVER\OEM\Inspiron 1525-2500'. Dir doesn't exist.
+3:017  0:000  _checkOEMPath Look for oem dir at path '\EFI\CLOVER\OEM\0U990C'. Dir doesn't exist.
+3:017  0:000  _checkOEMPath Look for oem dir at path '\EFI\CLOVER\OEM\0U990C-2500'. Dir doesn't exist.
+3:017  0:000  === [ GetUserSettings ] =========================
+3:017  0:000  GetDefaultModel()=MacBook4,1
+3:017  0:000  Using config.plist at path: \EFI\CLOVER
+3:018  0:001  Cannot find smbios.plist at path '\EFI\CLOVER' : Not Found
+3:018  0:000  '\EFI\CLOVER\smbios.plist' not loaded. Efi error Not Found
+3:019  0:000  BiosVersion: MB41.88Z.00C1.B00.0802091535
+4:506  1:487  BiosReleaseDate: 02/09/08
+4:641  0:135  EfiVersion: 
+4:768  0:126  Calibrated TSC Frequency = 2493749646 = 2493MHz
+5:335  0:567  GOP found at: PcieRoot(0x0)/Pci(0x2,0x0)/AcpiAdr(0x80010100)
+5:895  0:559  === [ GetListOfThemes ] =========================
+6:035  0:139  === [ Found config plists ] =====================
+6:164  0:128  - config.plist
+6:290  0:126  === [ LoadDrivers ] =============================
+6:431  0:141  Loading ApfsDriverLoader.efi status=Success
+7:246  0:814   - driver needs connecting
+7:371  0:125  Loading AudioDxe.efi status=Success
+7:767  0:395   - driver needs connecting
+7:893  0:125  Loading FSInject.efi status=Success
+8:274  0:381  Loading Ps2MouseDxe.efi status=Success
+9:054  0:779   - driver needs connecting
+9:581  0:526  Loading SMCHelper.efi status=Success
+9:965  0:384  Loading UsbMouseDxe.efi status=Success
+10:344  0:378   - driver needs connecting
+10:469  0:125  Loading XhciDxe.efi status=Success
+10:863  0:393   - driver needs connecting
+10:991  0:127  Loading NTFS.efi status=Success
+11:414  0:423   - driver needs connecting
+11:539  0:124  Loading NvmExpressDxe.efi status=Success
+12:337  0:797   - driver needs connecting
+12:863  0:526  Loading Fat.efi status=Success
+13:243  0:380   - driver needs connecting
+13:373  0:129  Loading EmuVariableUefi.efi status=Success
+14:159  0:785  EmuVariableUefi Initialize: VariableCommonInitialize = Success, orig services stored, install gEmuVariableControlProtocolGuid = Success
+14:719  0:560  8 drivers needs connecting ...
+14:844  0:125  PlatformDriverOverrideProtocol->GetDriver overriden
+14:974  0:129  APFS driver loaded
+20:990  6:015  EmuVariable InstallEmulation: orig vars copied, emu.var.services installed, CreateEvent VirtualAddressChange = Success, CreateEvent ExitBootServices = Success, set Status=Success
+23:549  2:559  === [ InitScreen ] ==============================
+23:689  0:140  Console modes reported: 4, available modes:
+23:833  0:143   - [01]: 80x25
+23:969  0:136   - [03]: 100x31
+24:109  0:140   - [04]: 160x42 (current mode)
+24:255  0:145  SetScreenResolution: 1280x1024 - not found!
+24:964  0:708  SetScreenResolution: 1280x800 - already set
+25:246  0:281  Using embedded font
+25:386  0:140  === [ ScanSPD ] =================================
+25:534  0:148  Scanning SMBus [8086:283E], mmio: 0xFE9FB700, ioport: 0x10C0, hostc: 0x1
+25:702  0:167  Slot: 0 Type 19 2048MB 667MHz Vendor=Kingston PartNo=9905295-052.A00LF SerialNo=69CC526E
+25:863  0:160  Slot: 2 Type 19 2048MB 667MHz Vendor=Kingston PartNo=9905295-052.A00LF SerialNo=69CC526E
+26:006  0:143  === [ GetAcpiTablesList ] =======================
+26:153  0:147  Get Acpi Tables List from RSDT:
+26:435  0:282   - [00]: FACP  M08     len=116
+26:973  0:537   - [01]: HPET  M08     len=56
+27:510  0:536   - [02]: APIC  M08     len=104
+27:649  0:138   - [03]: MCFG  M08     len=62
+27:794  0:145   - [04]: SLIC  M08     len=374
+27:929  0:135   - [05]: OSFR  M08     len=44
+28:069  0:140   - [06]: BOOT  M08     len=40
+28:215  0:145   - [07]: SSDT  CpuPm len=1228
+28:353  0:138   - [00]: Drop table : DMAR,                0 :  no
+28:645  0:291   - [01]: Drop table : SSDT,       6d50757043 :  yes
+28:919  0:274   - [02]: Drop table : SSDT,   74734930757043 :  no
+29:197  0:277   - [03]: Drop table : BGRT,                0 :  no
+29:485  0:288  Custom boot CUSTOM_BOOT_USER_DISABLED (0x0)
+29:618  0:132  Default theme: embedded
+29:760  0:142  === [ Found DSDT tables ] =======================
+29:906  0:145  === [ InitKextList ] ============================
+30:463  0:557  === [ ScanVolumes ] =============================
+31:023  0:559  Found 10 volumes with blockIO
+31:168  0:145  - [00]: Volume: PcieRoot(0x0)\Pci(0x1D,0x7)\USB(0x1,0x0)
+31:463  0:294          Result of bootcode detection: bootable unknown (legacy)
+31:610  0:147  - [01]: Volume: PcieRoot(0x0)\Pci(0x1D,0x7)\USB(0x1,0x0)\HD(1,MBR,0x00058E69,0x3F,0x3BB7C1)
+32:303  0:693          Result of bootcode detection: bootable unknown (legacy)
+32:445  0:141            label : BDU
+32:585  0:140          This is SelfVolume !!
+32:725  0:140  - [02]: Volume: PcieRoot(0x0)\Pci(0x1F,0x1)\Ata(0x0)
+33:005  0:279  - [03]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)
+33:650  0:645          Result of bootcode detection: bootable unknown (legacy)
+34:315  0:665  - [04]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(1,MBR,0xF0000000,0x3F,0x65F5B)
+34:595  0:279          Result of bootcode detection: bootable unknown (legacy)
+34:739  0:144            label : Unknown HD1
+35:296  0:557  - [05]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(2,MBR,0xF0000000,0x66000,0x32000)
+36:010  0:714          Result of bootcode detection: bootable Windows (vista,win)
+36:156  0:145            label : System Reservation
+36:297  0:141          hiding this volume
+36:443  0:146  - [06]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(3,MBR,0xF0000000,0x98000,0xDC35800)
+37:182  0:739          Result of bootcode detection: bootable Windows (vista,win)
+37:330  0:148            label : WIN7
+37:474  0:144  - [07]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(4,MBR,0xF0000000,0xDCCD94C,0xF4F6C35)
+37:769  0:294          Result of bootcode detection: bootable Windows (win)
+37:922  0:153            label : MIX
+38:064  0:141          hiding this volume
+38:209  0:145  - [08]: Volume: PcieRoot(0x0)\Pci(0x1C,0x3)\Pci(0x0,0x0)\NVMe(0x1,01-00-00-00-00-00-00-00)
+38:862  0:652  - [09]: Volume: PcieRoot(0x0)\Pci(0x1C,0x3)\Pci(0x0,0x0)\NVMe(0x1,01-00-00-00-00-00-00-00)\HD(1,MBR,0xDD1EA487,0x800,0x1DCF2000)
+39:145  0:283          Result of bootcode detection: bootable Windows (vista,win)
+39:686  0:540            label : SSD
+40:225  0:539  Searching volumes for latest nvram.plist ...
+40:516  0:290  LoadLatestNvramPlist loaded Status=Not Found
+40:650  0:134  PutNvramPlistToRtVars: no nvram.plist
+40:793  0:142  found 3 handles with audio
+40:935  0:142  No AudioIoDevice stored
+41:069  0:133  no stored audio parameters
+41:209  0:140  Found Audio Device Silicon Image (Unknown) (HDMI) at index 0
+41:359  0:149  Found Audio Device Sigmatel STAC9228X (Headphones) at index 1
+41:495  0:136  Found Audio Device Sigmatel STAC9228X (Speaker) at index 2
+41:640  0:145  Found Audio Device Sigmatel STAC9228X (LineOut) at index 3
+41:786  0:146  Found Audio Device Sigmatel STAC9228X (Other) at index 4
+41:923  0:137  === [ InitXTheme ] ==============================
+42:069  0:146  use Daylight theme
+42:215  0:145   using embedded theme
+42:373  0:158  sound play end with status=Device Error
+42:523  0:149  Using embedded font
+42:665  0:142  theme inited
+43:200  0:535  Chosen embedded theme
+43:745  0:545  after NVRAM boot-args=
+43:889  0:144  === [ Dump SMC keys from NVRAM ] ================
+44:032  0:142  found AppleSMC protocol
+44:173  0:141  Registered 0 SMC keys
+44:318  0:144  === [ ScanLoader ] ==============================
+44:457  0:139  - [01]: 'BDU'
+45:124  0:667        AddLoaderEntry for Volume Name=BDU, idx=0
+45:274  0:149        OSVersion= 
+45:413  0:139        IconName=unknown comma=-1 size=7
+45:555  0:142        Full=unknown
+45:705  0:150        Loader entry created for 'PcieRoot(0x0)\Pci(0x1D,0x7)\USB(0x1,0x0)\HD(1,MBR,0x00058E69,0x3F,0x3BB7C1)\EFI\BOOT\BOOTX64.efi'
+45:846  0:140       hiding entry: \EFI\BOOT\BOOTX64.efi
+45:985  0:139        Menu entry added at index 0
+46:134  0:149       hiding entry because DiskKind is DISK_KIND_EXTERNAL: \EFI\BOOT\BOOTX64.efi
+46:274  0:139  - [04]: 'Unknown HD1'
+46:554  0:279  - [05]: 'System Reservation'
+47:639  1:084  - [06]: 'WIN7'
+47:929  0:290  - [07]: 'MIX'
+48:215  0:285  - [09]: 'SSD'
+48:507  0:292  Entries list before ordering
+48:649  0:141      Entry 0 : Boot UEFI external from BDU (hidden)
+48:795  0:146  Entries after before ordering
+48:936  0:140    Entry 0 : Boot UEFI external from BDU (hidden)
+49:079  0:143  Scanning legacy ...
+49:224  0:145   hidden
+49:359  0:135      AddLegacyEntry:
+49:505  0:145        FullTitle=
+49:655  0:150        LoaderTitle=
+49:789  0:133        Volume->LegacyOS->Name=Windows
+49:930  0:140        Entry->Title=Boot Windows from WIN7
+50:074  0:143        IconName=vista,win comma=5 size=9
+50:615  0:541        first=os_vista
+51:164  0:548        Second=os_win
+51:310  0:145        IconName=unknown comma=-1 size=7
+51:447  0:137        Full=unknown
+51:586  0:139   hidden
+51:730  0:143      AddLegacyEntry:
+51:867  0:136        FullTitle=
+52:408  0:541        LoaderTitle=
+52:546  0:137        Volume->LegacyOS->Name=Windows
+52:694  0:148        Entry->Title=Boot Windows from SSD
+52:835  0:141        IconName=vista,win comma=5 size=9
+52:979  0:143        first=os_vista
+53:125  0:146        Second=os_win
+53:264  0:139        IconName=unknown comma=-1 size=7
+53:403  0:138        Full=unknown
+53:545  0:142  === [ AddCustomTool ] ===========================
+53:686  0:141  EmuVariable InstallEmulation: EFI_ALREADY_STARTED
+53:974  0:287  === [ GetEfiBootDeviceFromNvram ] ===============
+54:513  0:538   - [!] efi-boot-device-data not found
+55:035  0:521  Default boot entry not found
+55:184  0:149  EmuVariable UninstallEmulation: CloseEvent = Success, original var services restored
+55:620  0:435  BannerPlace at Clear Screen [576,84]
+55:806  0:186  AnimeRun=0
+55:992  0:186  GUI ready
+69:867  13:874  ConnectAll after refresh menu
+71:057  1:190  ReinitRefitLib after theme change
+71:225  0:167  === [ ScanVolumes ] =============================
+71:364  0:138  Found 12 volumes with blockIO
+71:574  0:210  - [00]: Volume: PcieRoot(0x0)\Pci(0x1D,0x7)\USB(0x1,0x0)
+72:749  1:174          Result of bootcode detection: bootable unknown (legacy)
+72:890  0:141  - [01]: Volume: PcieRoot(0x0)\Pci(0x1D,0x7)\USB(0x1,0x0)\HD(1,MBR,0x00058E69,0x3F,0x3BB7C1)
+73:188  0:297          Result of bootcode detection: bootable unknown (legacy)
+73:329  0:140            label : BDU
+73:473  0:144          This is SelfVolume !!
+74:067  0:593  - [02]: Volume: PcieRoot(0x0)\Pci(0x1F,0x1)\Ata(0x0)
+74:385  0:318  - [03]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)
+74:707  0:321          Result of bootcode detection: bootable unknown (legacy)
+74:854  0:147  - [04]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(1,MBR,0xF0000000,0x3F,0x65F5B)
+75:136  0:281          Result of bootcode detection: bootable unknown (legacy)
+75:298  0:162            label : Unknown HD1
+75:494  0:196  - [05]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(2,MBR,0xF0000000,0x66000,0x32000)
+75:808  0:314          Result of bootcode detection: bootable Windows (vista,win)
+76:378  0:569            label : System Reservation
+76:915  0:537          hiding this volume
+77:059  0:143  - [06]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(3,MBR,0xF0000000,0x98000,0xDC35800)
+77:339  0:280          Result of bootcode detection: bootable Windows (vista,win)
+77:479  0:139            label : WIN7
+77:624  0:145  - [07]: Volume: PcieRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(4,MBR,0xF0000000,0xDCCD94C,0xF4F6C35)
+77:901  0:276          Result of bootcode detection: bootable Windows (win)
+78:046  0:145            label : MIX
+78:187  0:141          hiding this volume
+78:336  0:149  - [08]: Volume: PcieRoot(0x0)\Pci(0x1C,0x3)\Pci(0x0,0x0)\NVMe(0x1,01-00-00-00-00-00-00-00)
+78:615  0:279  - [09]: Volume: PcieRoot(0x0)\Pci(0x1C,0x3)\Pci(0x0,0x0)\NVMe(0x1,01-00-00-00-00-00-00-00)\HD(1,MBR,0xDD1EA487,0x800,0x1DCF2000)
+78:906  0:290          Result of bootcode detection: bootable Windows (vista,win)
+79:039  0:133            label : SSD
+79:180  0:140  - [10]: Volume: PcieRoot(0x0)\Pci(0x1D,0x7)\USB(0x2,0x0)
+79:883  0:703          Result of bootcode detection: bootable unknown (legacy)
+80:435  0:552  - [11]: Volume: PcieRoot(0x0)\Pci(0x1D,0x7)\USB(0x2,0x0)\HD(1,MBR,0x00AB2DB7,0x800,0x1DD5800)
+80:739  0:303          Result of bootcode detection: bootable Windows (vista,win)
+80:899  0:160            label : CCCOMA_X64FRE_RU-RU_DV9
+81:041  0:141  Searching volumes for latest nvram.plist ...
+81:727  0:686  LoadLatestNvramPlist loaded Status=Not Found
+81:869  0:141  PutNvramPlistToRtVars: no nvram.plist
+82:014  0:145  found 3 handles with audio
+82:155  0:140  No AudioIoDevice stored
+82:299  0:143  no stored audio parameters
+82:445  0:146  Found Audio Device Silicon Image (Unknown) (HDMI) at index 0
+82:585  0:140  Found Audio Device Sigmatel STAC9228X (Headphones) at index 1
+82:725  0:139  Found Audio Device Sigmatel STAC9228X (Speaker) at index 2
+82:875  0:149  Found Audio Device Sigmatel STAC9228X (LineOut) at index 3
+83:016  0:140  Found Audio Device Sigmatel STAC9228X (Other) at index 4
+83:156  0:140  theme inited
+83:305  0:148  Chosen embedded theme
+83:834  0:529  after NVRAM boot-args=
+84:375  0:540  === [ ScanLoader ] ==============================
+84:520  0:144  - [01]: 'BDU'
+84:799  0:279        AddLoaderEntry for Volume Name=BDU, idx=0
+84:944  0:145        OSVersion= 
+85:087  0:142        IconName=unknown comma=-1 size=7
+85:225  0:138        Full=unknown
+85:370  0:144        Loader entry created for 'PcieRoot(0x0)\Pci(0x1D,0x7)\USB(0x1,0x0)\HD(1,MBR,0x00058E69,0x3F,0x3BB7C1)\EFI\BOOT\BOOTX64.efi'
+85:517  0:147       hiding entry: \EFI\BOOT\BOOTX64.efi
+85:649  0:132        Menu entry added at index 0
+85:791  0:141       hiding entry because DiskKind is DISK_KIND_EXTERNAL: \EFI\BOOT\BOOTX64.efi
+85:935  0:143  - [04]: 'Unknown HD1'
+86:210  0:275  - [05]: 'System Reservation'
+86:494  0:284  - [06]: 'WIN7'
+86:787  0:292  - [07]: 'MIX'
+87:861  1:074  - [09]: 'SSD'
+88:217  0:355  - [11]: 'CCCOMA_X64FRE_RU-RU_DV9'
+88:805  0:588        AddLoaderEntry for Volume Name=CCCOMA_X64FRE_RU-RU_DV9, idx=1
+89:284  0:478        OSVersion= 
+89:824  0:540        IconName=vista,win comma=5 size=9
+89:965  0:141        first=os_vista
+90:114  0:148        Second=os_win
+90:256  0:141        IconName=unknown comma=-1 size=7
+90:399  0:142        Full=unknown
+90:546  0:147        Loader entry created for 'PcieRoot(0x0)\Pci(0x1D,0x7)\USB(0x2,0x0)\HD(1,MBR,0x00AB2DB7,0x800,0x1DD5800)\EFI\MICROSOFT\BOOT\cdboot.efi'
+90:684  0:138        Menu entry added at index 1
+91:054  0:369        AddLoaderEntry for Volume Name=CCCOMA_X64FRE_RU-RU_DV9, idx=2
+91:847  0:793        OSVersion= 
+91:987  0:139        IconName=unknown comma=-1 size=7
+92:125  0:137        Full=unknown
+92:267  0:142        Loader entry created for 'PcieRoot(0x0)\Pci(0x1D,0x7)\USB(0x2,0x0)\HD(1,MBR,0x00AB2DB7,0x800,0x1DD5800)\EFI\BOOT\BOOTX64.efi'
+92:805  0:537       hiding entry: \EFI\BOOT\BOOTX64.efi
+93:345  0:539        Menu entry added at index 2
+93:491  0:146       hiding entry because DiskKind is DISK_KIND_EXTERNAL: \EFI\BOOT\BOOTX64.efi
+93:634  0:142  Entries list before ordering
+93:770  0:136      Entry 0 : Boot UEFI external from BDU (hidden)
+93:910  0:140      Entry 1 : Boot Microsoft EFI cdboot from CCCOMA_X64FRE_RU-RU_DV9
+94:056  0:145      Entry 2 : Boot UEFI external from CCCOMA_X64FRE_RU-RU_DV9 (hidden)
+94:624  0:568  Entries after before ordering
+94:766  0:142    Entry 0 : Boot UEFI external from BDU (hidden)
+94:914  0:147    Entry 1 : Boot Microsoft EFI cdboot from CCCOMA_X64FRE_RU-RU_DV9
+95:055  0:141    Entry 2 : Boot UEFI external from CCCOMA_X64FRE_RU-RU_DV9 (hidden)
+95:196  0:140  Scanning legacy ...
+95:337  0:141   hidden
+95:476  0:138      AddLegacyEntry:
+95:616  0:139        FullTitle=
+95:757  0:141        LoaderTitle=
+95:895  0:137        Volume->LegacyOS->Name=Windows
+96:035  0:139        Entry->Title=Boot Windows from WIN7
+96:178  0:143        IconName=vista,win comma=5 size=9
+96:724  0:546        first=os_vista
+97:264  0:540        Second=os_win
+97:431  0:166        IconName=unknown comma=-1 size=7
+97:587  0:155        Full=unknown
+97:766  0:178   hidden
+97:915  0:149      AddLegacyEntry:
+98:065  0:149        FullTitle=
+98:206  0:140        LoaderTitle=
+98:350  0:144        Volume->LegacyOS->Name=Windows
+98:495  0:144        Entry->Title=Boot Windows from SSD
+98:631  0:135        IconName=vista,win comma=5 size=9
+98:779  0:148        first=os_vista
+98:925  0:145        Second=os_win
+99:065  0:140        IconName=unknown comma=-1 size=7
+99:210  0:145        Full=unknown
+99:356  0:145      AddLegacyEntry:
+99:497  0:141        FullTitle=
+99:644  0:147        LoaderTitle=
+99:787  0:142        Volume->LegacyOS->Name=Windows
+100:321  0:534        Entry->Title=Boot Windows from CCCOMA_X64FRE_RU-RU_DV9
+100:858  0:537        IconName=vista,win comma=5 size=9
+101:004  0:146        first=os_vista
+101:145  0:140        Second=os_win
+101:284  0:138        IconName=unknown comma=-1 size=7
+101:436  0:152        Full=unknown
+101:578  0:141  === [ AddCustomTool ] ===========================
+102:118  0:539  EmuVariable InstallEmulation: orig vars copied, emu.var.services installed, CreateEvent VirtualAddressChange = Success, CreateEvent ExitBootServices = Success, set Status=Success
+102:974  0:855  === [ GetEfiBootDeviceFromNvram ] ===============
+103:118  0:144   - [!] efi-boot-device-data not found
+103:264  0:145  Default boot entry not found
+103:406  0:142  EmuVariable UninstallEmulation: CloseEvent = Success, original var services restored
+104:235  0:828  AnimeRun=0
+114:881  10:646  BootVariable of the entry is empty
+115:890  1:008  === [ StartLoader ] =============================
+116:038  0:147  Starting PcieRoot(0x0)\Pci(0x1D,0x7)\USB(0x2,0x0)\HD(1,MBR,0x00AB2DB7,0x800,0x1DD5800)\EFI\MICROSOFT\BOOT\cdboot.efi
+116:180  0:142  Finally: ExternalClock=200MHz BusSpeed=199500kHz CPUFreq=2494MHz PIS: hw.busfrequency=800000000Hz
+116:899  0:719  Loading cdboot.efi status=Success
+118:312  1:412  Closing events for Windows
+118:451  0:139  EmuVariable UninstallEmulation: CloseEvent = Invalid Parameter, original var services restored
+119:321  0:869  OtherOS: Found Acpi 2.0 RSDP 0xDF2A2000
+119:459  0:137  RSDT at 0xDF66D93A
+119:605  0:145  XSDT at 0xDF66F200
+119:746  0:140  FADT pointer = 0xDF66F09C
+119:886  0:140  Dir '\\EFI\CLOVER\ACPI\Windows' not found. No patching will be done.
+120:026  0:140  DeleteNvramVariable (efi-boot-device, 7C436110-AB2A-4BBB-A880-FE41995C9F82):
+120:166  0:139  DeleteNvramVariable (efi-boot-device-data, 7C436110-AB2A-4BBB-A880-FE41995C9F82):
+120:307  0:141  DeleteNvramVariable (BootCampHD, 7C436110-AB2A-4BBB-A880-FE41995C9F82):
+120:457  0:149  start image 'cdboot.efi'
+120:595  0:138  Using load options '-v '
+123:930  3:334  Fatal Error: No mapping returned from cdboot.efi
+124:931  1:000  Custom boot screen is not locked
+125:078  0:147  Failed to unlock custom boot screen: Not Ready!
+134:567  9:488  EmuVariable UninstallEmulation: CloseEvent = Invalid Parameter, original var services restored
+135:847  1:279  UninitializeConsoleSim : Status Invalid Parameter
