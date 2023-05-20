@@ -292,7 +292,7 @@
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
-		<string>WIN7</string>
+		<string>WIN10SSD</string>
 		<key>DisableCloverHotkeys</key>
 		<false/>
 		<key>Fast</key>
@@ -699,8 +699,10 @@
 		<key>Hide</key>
 		<array>
 			<string>System Reservation</string>
+			<string>WIN7</string>
 			<string>MIX</string>
 			<string>BOOTX64.EFI</string>
+			<string>WIN10SSD</string>
 		</array>
 		<key>#KbdPrevLang</key>
 		<false/>
